@@ -128,6 +128,7 @@ import { urlPosts } from '../urls'
     mounted () {
     this.getTareas
     },
+    
     data () {
       return {
       formState : {},
@@ -163,6 +164,7 @@ import { urlPosts } from '../urls'
         this.formData = this.getInitialData()
         this.formState._reset()
         this.enviando = false
+        this.getInitialData()
         this.getUsuarios()
       })
       .catch(error => {

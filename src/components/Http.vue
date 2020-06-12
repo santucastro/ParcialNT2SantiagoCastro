@@ -1,6 +1,9 @@
 <template>
   <section class="src-components-http">
     <div class="jumbotron mt-3">
+       <h2>Tareas </h2>
+       <br />
+       <br />
       <div v-if="this.$store.state.tareas.length ==0">No hay Tareas</div>
       <div v-else>
         <table class="table">
@@ -81,4 +84,5 @@
 hr {
   background-color: white;
 }
+
 </style>
